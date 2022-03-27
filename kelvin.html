@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature converter</title>
+    <style>
+        .main{
+            width: 450px;
+            height: 450px;
+            margin-left: 450px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin-top: 50px;
+            background-color: darkgrey;
+            border-radius: 30px;
+        }
+        .fahren{
+    color: #f7226a;
+}
+        .cel{
+    margin-right: 40px;
+    color: #f7226a;
+}
+
+#convert{
+    background-color:#3294bb;
+    color: #fff;
+    margin-top: 30px;
+    padding: 15px 50px 15px 50px;
+    border-radius: 7px;
+    font-size: larger;
+    font-weight: 500;
+    margin-left: 100px;
+}
+
+#convert:hover{
+    color: black;
+    background-color:#c232e6;
+    font-weight: 700;
+}
+        .main h1{
+            padding: 5px;
+            text-align: center;
+            font-size: 40px;
+            
+        }
+        label unit{
+            margin-left: 5px;
+        }
+        .head1{
+            font-size: 25px;
+            margin-left: 40px;
+            margin-top: 80px;
+        }
+        .head2{
+            font-size: 30px;
+            margin-left: 110px;
+             margin-top: 80px;
+        }
+        .head1 p{
+            
+            font-size: 30px;
+        }
+        label {
+            color: black
+            font-weight: bold;
+            display: block; 
+            width: 150px;
+            float: left;
+            margin-left: 150px;
+            
+        } 
+        Celsius{
+            margin-left: 150px;
+        }
+      
+       
+    </style>
+</head>
+<body>
+    <!-------------------------------------this is main section------------------------------------------------------------------------>
+    <section class="main">
+        <h1>Temperature converter</h1>
+        <h2 class="head1">Convert from Fahrenheit to Celsius</h2>
+      <p class="fahren">Fahrenheit: <input type="text" id="fahrenheit" placeholder="Fahrenheit" value="" /></p>
+    <p class="cel">Celsius: <input type="text" id="celsius" placeholder="Celsius" value="" /></p>
+    <button id="convert">Convert!</button>
+
+    </section>
+    <script>
+        document.getElementById('convert').onclick = tempConvert;
+        function tempConvert() {
+            var fahrenheit = document.getElementById("fahrenheit").value;
+        var celsius = document.getElementById("celsius").value;
+        if (fahrenheit != '') {
+            celsius = (parseFloat(fahrenheit) - 32) / 1.8;
+        } 
+        else {
+            fahrenheit = (parseFloat(celsius) * 1.8) + 32;
+        }
+    document.getElementById('fahrenheit').value = parseFloat(fahrenheit).toFixed(1);
+    document.getElementById('celsius').value = parseFloat(celsius).toFixed(1);
+}
+
+    </script>
+
+ 
+        
+
+        
+ 
+
+    
+    </section>
+    
+</body>
+</html>

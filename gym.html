@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tanjila's Fitness club</title>
+</head>
+    <link href="https://pixabay.com/" rel="stylesheet">
+<link rel="stylesheet" href="gym.css">
+<style>
+    /*        css reset*/
+    
+
+    .left {
+        
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        color: white;
+        border-radius: 50%
+    }
+
+    .right {
+        
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        color: white;
+
+    }
+
+    .mid {
+        border: 2px solid red;
+
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        background-color: black;
+        margin-top: -1275px;
+
+
+    }
+   
+    
+          .glow {
+  font-size: 20px;
+              margin-top: 5px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+}
+
+
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: white;
+        font-size: 15px;
+        border-color:chocolate;
+        font-family: cursive;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+    .left img{
+        width: 90px;
+        filter: invert(100%);
+        border-color: red;
+        
+    }
+    .left img:hover{
+        backface-visibility: visible;
+    }
+    .btn{
+        margin: 0pz 9px;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-right: 4px;
+         font-family: cursive;
+    
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+   
+    .container{
+        border: 4px solid red;
+        margin: 40px;
+        padding:50px;
+        width: 33%;
+        border-radius: 2px;
+        color: white;
+        border-color: yellow;
+    }
+    .container h1{
+        font-size: 50px;
+        margin-left: -20px;
+        font-family: sans-serif;
+        
+        
+    }
+    .container h2{
+        font weight:800px;
+    }
+    /*.form-group input{
+        text-align: center;
+        display: block;
+        width:500px;
+        margin-left:-500px;
+        padding: 6px;
+         border: 1px solid #4CAF50;
+        margin: 3px auto;
+       
+    }*/
+    .form-group input{
+        margin-top: 8px;
+    }
+    .container button{
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+   
+</style>
+
+<body>
+    <img src="gym.jpeg" alt="">
+   
+    <header class="header">
+        <!--        left bix for logo-->
+        <div class="left">
+           <img src="https://media.istockphoto.com/photos/fitness-icon-picture-id1321327129" alt="">
+         <p class="logo-text glow">Tanjila's  fitness</p>
+        </div>
+        <!--        mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Abous us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!--        right box for search box-->
+        <div class="right">
+        <button class="btn">book your appointment</button>
+            <button class="btn">E-mail us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>ADDICTED TO GETTING STRONGER?</h1>
+        <h2>JOIN TANJILA'S GYM</h2>
+    
+   <form action="noaction.php">
+       <div class="form-group">
+       <input type="text" name="" placeholder="Enter your name">
+       </div>
+       
+       <div class="form-group">
+       <input type="text" name="" placeholder="Enter your mobile number">
+       </div>
+       
+       <div class="form-group">
+       <input type="text" name="" placeholder="Adress">
+       </div>
+       
+       <div class="form-group">
+       <input type="text" name="" placeholder="Age">
+       </div>
+       
+       <div class="form-group">
+       <input type="text" name="" placeholder="Gender">
+       </div>
+       
+       <button class="btn">Submit</button>
+   
+   </form>
+    </div>
+    
+   
+</body></html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+</head>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+       
+        img{
+            
+            border-radius: 50%;
+         border:3px solid black;
+            width:250px;
+            height: 250px;
+            margin: 20px;
+            padding: 0px;
+            margin-left: 150px;
+            
+        }
+        img:hover{
+            width:300px;
+            height: 300px;
+            border-color: red;
+        }
+        .email{
+            
+            display: inline-block;
+            float: right;
+            text-align: center;
+            width: 50%
+            
+        
+        }
+        .btn{
+            
+            margin-top: 30px;
+            margin-left: -200px;
+            width: 400px;
+            height: 40px;
+            color: white;
+            font-size: 30px;
+            background-color: grey;
+            
+        }
+        .btn:hover{
+            background-color: black;
+            
+        }
+        .header{
+            background-color:white;
+        }
+        .email h1{
+            margin-left: -150px;
+            font-size: 50px;
+    
+        }
+        .nav{
+            display: block;
+            backgroound color: white;
+            font-size:50px;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: justify;
+            
+        }
+        
+        .navbar li{
+            display: inline;
+            text-decoration: underline;
+            margin: 80px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 3px solid darkblue;
+            border-radius: 25px;
+            color: white;
+            margin-left: 70px;
+            
+          
+        }
+        .navbar li:hover{
+            background-color: black;
+            text-decoration: underline;
+            
+        }
+        hr.header{
+            5px solid grey;
+        }
+        
+        
+        .info{
+            text-align: justify;
+            font-family: cursive;
+            box-sizing: border-box;
+            width: 80%;
+            margin-left: 130px;
+            
+        }
+        .skills h1{
+            font-size:50px;
+            text-align: center;
+            margin-left: 310px;
+        }
+        .logo1 img{
+            width: 150px;
+            height: 150px;
+            margin-left: 300px;
+        }
+        .logo2 img{
+            width: 150px;
+            height: 150px;
+            margin-top:-1000px;
+            margin-left: 720px;
+            margin-bottom: 190px;
+            margin-right: -50px;
+        }
+        .logo3 img{
+            width: 150px;
+            height: 150px;
+            margin: -100px -50px 120px 300px;
+        }
+        .logo4 img{
+            width: 150px;
+            height: 150px;
+            margin-top: -550px;
+            margin-left: 720px;
+            margin-bottom: 300px;
+        }
+        .logo {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 40px;
+            list-style: none;
+        }
+        .logo1 img:hover{
+            width:190px;
+            height:190px;
+            border-color: black;
+        }
+         .logo2 img:hover{
+            width:190px;
+            height:190px;
+             border-color: black;
+        }
+         .logo3 img:hover{
+            width:190px;
+            height:190px;
+             border-color: black;
+        }
+         .logo4 img:hover{
+            width:190px;
+            height:190px;
+             border-color: black;
+        }
+        .logo-txt1{
+            margin-left: 320px;
+            color: blue;
+        }
+        .skills{
+            width: 1000px;
+            height: 1000px;
+        }
+        .logo-txt2{
+             margin-top:-140px;
+            margin-left: 770px;
+            margin-bottom: 190px;
+            margin-right: -50px;
+            color: blue;
+        }
+        .logo-txt3{
+           margin-left: 260px;
+           color: blue;
+           
+            
+        }
+        .logo-txt4{
+             margin-left: 780px;
+             margin-right: -50px;
+            margin-top: -140px;
+             color: blue;
+                        
+        }
+        .contact h2{
+            font-size: 50px;
+            text-align: center;
+            margin-left: 30px;
+        }
+        .form-group input{
+            margin-left: 570px;
+            height:20px;
+            width: 200px;
+        }
+        #b1{
+            margin-left: 490px;
+        }
+        #Q1 input{
+            margin-left: 570px;
+            height:100px;
+        }
+        .m1{
+            width: 110px;
+            height: 110px;
+            margin-top: 100px;
+            margin-left: 150px;
+        }
+         .m2{
+            width: 100px;
+            height: 100px;
+        }
+         .m3{
+            width: 100px;
+            height: 100px;
+        }
+        .m4{
+           width: 100px;
+            height: 100px;  
+        }
+        .m1:hover{
+            width: 120px;
+            height: 120px;
+            border-color: blue;
+        }
+         .m2:hover{
+            width: 120px;
+            height: 120px;
+            border-color: blue;
+        }
+         .m3:hover{
+            width: 120px;
+            height: 120px;
+            border-color: blue;
+        }
+        .m4:hover{
+            width: 120px;
+            height: 120px;
+            border-color: blue;
+        }
+        .footer{
+            height:800px;
+            background-color: black;
+        }
+        .footer h{
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            margin-left: 500px;
+            margin-top: 100px;
+            
+        }
+        .me a{
+            font-size: 40px;
+            margin-left: 500px;
+            margin-top: 300px;
+        }
+     /*   .nav{
+            background-color: antiquewhite;
+        }
+        .header{
+            background-color: antiquewhite
+        }
+        .skills{
+            background-color: antiquewhite;
+        }
+        .contact{
+            background-color: antiquewhite;
+        }*/
+        section:nth-child(1){
+            background-color: antiquewhite;
+        }
+        .me{
+            
+            margin-left: 370px;
+            margin-top: 100px;
+        }
+    
+    </style>
+<body>
+    <!--------------------------------------------------this is navigation section---------------------------------------------->
+    <section1>
+     <div class="nav">
+        <ul class="navbar">
+            <li><a href="#">My profile</a></li>
+            <li><a href="#">My skills</a></li>
+            <li><a href="#">Contact me</a></li>
+
+        </ul>
+    </div>
+    <hr>
+    </section1>
+    <!----------------------------------------------this is header section------------------------------------------------------------>
+    <section2>
+    <div class="header">
+        <div class="profile">
+            <img src="pro.jpeg" alt="#">
+        
+        <div class="email">
+            <h1>Hello This is Tanjila Bashirahmad Bijali!!!</h1>
+            
+            <button class="btn">Download  CV</button>
+        </div>
+            <div class="info">
+                <p class="information"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, soluta quae veniam accusamus nobis consequuntur repellat sequi voluptate consectetur eligendi quod ratione reiciendis quam aspernatur rem sunt eveniet temporibus iste.</span><span>Eligendi quibusdam culpa aliquam enim unde iusto ex sint molestiae cupiditate pariatur inventore fugiat, voluptate eveniet exercitationem eum, voluptatum illo at maxime impedit! Aut itaque accusamus culpa officia fugit assumenda.</span></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    </section2>
+    <!-------------------------------------this is skills section----------------------------------------------------------------------->
+    <section3>
+    <div class="skills">
+        <h1>My Skills</h1>
+        <ul class="logo">
+           <li class="logo1">
+               <img src="html_logo.png" alt="#">
+               <p class="logo-txt1">HTML</p>
+           </li>
+            <li class="logo2">
+                <img src="css.png" alt="#">
+                <p class="logo-txt2">CSS</p>
+                
+            </li>
+            <li class="logo3">
+                <img src="js_logo.png" alt="#">
+                <p class="logo-txt3">JAVASCRIPT</p>
+            </li>
+            <li class="logo4">
+                
+                <img src="c_logo.png" alt="#">
+                <p class="logo-txt4">C</p>
+        
+            </li>            
+            
+        </ul>
+        
+    </div>
+    <hr>
+    </section3>
+    <!---------------------------------this is contact section---------------------------------------------------->
+    <section4>
+    <div class="contact">
+        <h2>Contact me</h2>
+         <form action="noaction.php">
+       <div class="form-group">
+       <input type="text" name="" placeholder="Name">
+       </div>
+       <br>
+       <div class="form-group">
+       <input type="text" name="" placeholder="Contact number">
+       </div>
+       <br>
+       <div class="form-group">
+       <input type="text" name="" placeholder="E-mail id">
+       </div>
+       <br>
+       <div class="form-group">
+       <input type="text" name="" placeholder="Country">
+       </div>
+       <br>
+       <div class="form-group">
+       <input type="text" name="" placeholder="State">
+       </div><br>
+              <div class="form-group" id="Q1">
+       <input type="text" name="" placeholder="Query">
+       </div>
+       <br>
+       <button class="btn" id="b1">Submit</button>
+   
+   </form>
+    </div>
+   
+    <br><hr>
+    </section4>
+    <!---------------------------------------------this is footer section----------------------------------------------------------->
+    <div class="footer">
+       <h>More about me</h>
+        <div class="vdo">
+            
+             <img src="data:image/png;base64,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" class="m1" alt="#">
+    <img src="data:image/png;base64,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" class="m2" alt="#">
+    <img src="https://www.kindpng.com/picc/m/183-1831735_facebook-logo-in-circular-button-outlined-social-symbol.png" class="m3" alt="#">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmWhUXj0ij4Gk39dOnAtB2OQTWU5exq0zEA&usqp=CAU" class="m4" alt="#">
+    
+        </div>
+        <div class="me">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/3nx2Nq7akF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+</body>
+   
+</html>
